@@ -1,0 +1,73 @@
+:root {
+  --primary-color: rgb(92, 140, 179);
+  --secondary-color: rgb(184, 157, 116);
+}
+
+body {
+  font-family: arial;
+  background-image: url(../images/pexels-element-digital-1370295.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-wrapper {
+  background-color: var(--primary-color);
+  box-shadow: 0 5px 25px rgb(0 0 0 / 3);
+}
+
+.container {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  padding-right: 40px;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px
+}
+
+.header-logo-img svg{
+  width: 52px;
+  height: 52px;
+  fill: white;
+}
+
+.header-logo-text:hover {
+  cursor: default;
+}
+
+.header-logo-text {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.header-create {
+  background-color: var(--secondary-color);
+  box-shadow: 3px 3px 5px rgb(0 0 0 / .1);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  
+  cursor: pointer;
+}
+
+.header-create > div{
+  margin-top: 2px;
+  color: white;
+  font-weight: 550;
+  font-size: 1.3rem;
+}
