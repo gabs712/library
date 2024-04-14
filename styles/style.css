@@ -1,30 +1,27 @@
 :root {
   --primary-color: rgb(92, 140, 179);
-  --secondary-color: rgb(184, 157, 116);
+  --secondary-color: rgb(117 207 199);
 }
 
 body {
   font-family: arial;
-  background-image: url(../images/pexels-element-digital-1370295.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
 }
 
 .header-wrapper {
   background-color: var(--primary-color);
-  box-shadow: 0 5px 25px rgb(0 0 0 / 3);
+  box-shadow: 0 3px 5px rgb(0 0 0 / .3);
 }
 
 .container {
-  margin: auto;
+  margin: 0 auto;
   max-width: 1000px;
+  padding-inline: 20px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding-block: 10px;
   padding-right: 40px;
   align-items: center;
 }
@@ -70,4 +67,56 @@ body {
   color: white;
   font-weight: 550;
   font-size: 1.3rem;
+}
+
+
+.main {
+  padding-block: 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.books-label {
+  font-size: 1.35rem;
+  text-shadow: 2px 2px 3px rgb(0 0 0 / .1);
+  font-weight: bold;
+  color: rgb(85, 85, 85);
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.book-card {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 0.2);
+  padding: 15px;
+  display: grid;
+  gap: 9px;
+  text-align: center;
+  word-break: break-word;
+}
+
+.book-card-buttons {
+  margin-top: w0px;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.book-card-buttons button {
+  border-radius: 5px;
+  padding: 0px 5px;
+  background-color: transparent;
+}
+
+.read-button {
+  border: 2px solid rgba(81, 211, 81, 0.493);
+}
+
+.remove-button {
+  border: 2px solid rgba(255, 0, 0, 0.521);
 }
