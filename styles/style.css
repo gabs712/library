@@ -7,6 +7,18 @@ body {
   font-family: arial;
 }
 
+button {
+  border: none;
+  padding: 2px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  opacity: .9;
+}
+
 .modal::backdrop {
   background-color: rgba(0, 0, 0, .2);
 }
@@ -56,19 +68,8 @@ body {
   gap: 20px;
 }
 
-.modal-buttons button {
-  border: none;
-  padding: 2px 5px;
-  border-radius: 7px;
-  cursor: pointer;
-}
-
-.modal-buttons button:hover {
-  opacity: .9;
-}
-
 .modal-create-button {
-  background-color: lightgreen;
+  background-color: rgb(95, 211, 95);
 }
 
 .modal-cancel-button {
@@ -155,7 +156,6 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 25px;
-  align-items: start;
 }
 
 .book-card {
@@ -170,27 +170,22 @@ body {
 }
 
 .book-card-buttons {
-  margin-top: 13px;
+  margin-top: 30px;
   display: flex;
   gap: 5px;
   justify-content: space-between;
+  align-self: end;
+  font-size: .8rem;
 }
 
-.book-card-buttons button {
-  border-radius: 5px;
-  padding: 0px 5px;
-  background-color: transparent;
-  cursor: pointer;
+.book-read-button {
+  background-color: rgb(109, 228, 109);
 }
 
-.read-button {
-  border: 2px solid rgba(81, 211, 81, 0.493);
+.book-remove-button {
+  background-color: lightcoral;
 }
 
-.remove-button {
-  border: 2px solid rgba(255, 0, 0, 0.521);
-}
-
-.notRead-button {
-  border: 2px solid rgba(238, 238, 36, 0.884);
+.book-notRead-button {
+  background-color: rgb(56, 163, 177);
 }

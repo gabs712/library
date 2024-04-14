@@ -1,7 +1,6 @@
 const createButton = document.querySelector('.header-create')
 const modal = document.querySelector('.modal')
 
-
 createButton.addEventListener('click', () => {
   modal.showModal()
 })
@@ -11,3 +10,5 @@ modal.addEventListener('click', (e) => {
     modal.close()
   }
 })
+
+console.dir(document.querySelector('form'))
