@@ -83,7 +83,6 @@ openModalButton.addEventListener('click', () => {
 modal.addEventListener('click', (e) => {
   if (e.target === modal) {
     modal.close()
-    form.reset()
   }
 })
 
