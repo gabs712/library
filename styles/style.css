@@ -20,7 +20,7 @@ button:hover {
 }
 
 .modal::backdrop {
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, 0.452);
 }
 .modal {
   border: none;
@@ -48,7 +48,7 @@ button:hover {
 .modal-info input {
   border: none;
   border-bottom: 1px solid grey;
-  width: 180px;
+  width: 130px;
 }
 
 .modal-info input:focus {
@@ -91,7 +91,6 @@ button:hover {
   display: flex;
   justify-content: space-between;
   padding-block: 10px;
-  padding-right: 40px;
   align-items: center;
 }
 
@@ -127,8 +126,8 @@ button:hover {
   justify-content: center;
   width: 43px;
   height: 43px;
-  
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .header-create > div{
