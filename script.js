@@ -9,15 +9,17 @@ const myLibrary = []
 
 displayBooks()
 
-function Book(title, author, pages, isRead) {
-  this.title = title
-  this.author = author
-  this.pages = pages
-  this.isRead = isRead
-}
-
-Book.prototype.toggleRead = function() {
-  this.isRead = this.isRead ? false : true
+class Book {
+  constructor(title, author, pages, isRead) {
+    this.title = title
+    this.author = author
+    this.pages = pages
+    this.isRead = isRead
+  }
+  
+  toggleRead () {
+    this.isRead = this.isRead ? false : true
+  }
 }
 
 function addBookToLibrary() {
